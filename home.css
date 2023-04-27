@@ -4,3 +4,26 @@
     overflow: hidden;
     height: 50vh;
 }
+.second .nav-item{
+    margin:0 15px 0 15px !important;
+}
+.carousel{
+    padding-left: 0 !important;
+}
+.input-group-text{
+    background: transparent !important;
+}
+input[type=search]{
+    width: 600px !important  ;
+}
+
+.btn-account {
+    border-radius: 20px !important;
+}
+.custom-text:hover{
+    color: orange !important;
+}
+    
+
+
+
