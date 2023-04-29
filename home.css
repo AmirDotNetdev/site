@@ -23,6 +23,18 @@ input[type=search]{
 .custom-text:hover{
     color: orange !important;
 }
+.line{
+    
+    background-color: coral;
+    height: 2px;
+    border-radius: 20px;
+
+}
+.brand-card{
+    display: flex;
+    flex: 1;
+}
+
     
 
 
