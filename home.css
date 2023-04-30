@@ -34,6 +34,13 @@ input[type=search]{
     display: flex;
     flex: 1;
 }
+.brand-border{
+    border-radius: 100px;
+}
+.card img{
+    height: 13rem;
+}
+
 
     
 
