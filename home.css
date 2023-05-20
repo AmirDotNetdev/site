@@ -41,6 +41,13 @@ input[type=search]{
     height: 13rem;
 }
 
+.btn-submit{
+    color: white;
+    background-color: #f1751d;
+    width: 20%;
+    border: none;
+    height: 100%;
+}
 
     
 
