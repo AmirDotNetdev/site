@@ -48,6 +48,19 @@ input[type=search]{
     border: none;
     height: 100%;
 }
+.form-floating>label{
+    left: auto !important;
+}
+.form-floating>.form-control{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid black;
+}
+.form-floating>.form-control:focus{
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 2px solid blue;
+}
 
     
 
