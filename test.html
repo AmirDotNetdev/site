@@ -15,41 +15,93 @@
 </head>
 
 <body>
-  <div class="container login-custom-container">
-      <form action="" >
-        <div class="row">
-          <div class="col d-flex justify-content-center">Logo</div>
+  <div class="container border w-50">
+    <form>
+      <div class="row">
+
+        <div class="col-md-12 d-flex justify-content-center">
+          <h5>Logo</h5>
         </div>
-        <div class="row">
-          <div class="form-floating col-md-5 mx-auto  mb-3">
-            <input type="text" class="form-control" id="username" placeholder="نام کاربری">
-            <label for="username">نام کاربری</label>
-            </div>
-            </div>
-            <div class="row">
-              <div class="form-floating col-md-5 mx-auto  mb-3">
-                <input type="text" class="form-control" id="username" placeholder="نام کاربری">
-                <label for="username">نام کاربری</label>
-                </div>
-            </div>
-            <div class="row">
-              <div class="form-check form-check-reverse col-md-5 mx-auto mb-3">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                  منو به یاد داشته باش
-                </label>
-              </div>
-            </div>
-              <div class="row">
-                <input type="button" class="btn btn-success col-md-5 mx-auto" value="ورود">
-              </div>
-              
-        
-        
-      </form>
-    </div>
-    
+        <div class="form-floating col-md-10 mb-3">
+          <input type="text" class="form-control" id="txtInput1" placeholder="نام و نام خانوادگی" onkeyup="EnableDisable(this)">
+          <label for="fullName">نام و نام خانوادگی</label>
+        </div>
+        <div class="col-md-1 mt-auto mb-3">
+          <input type="submit" class="btnCheck shadow fa-icon" value="&#xf00c" id="btnSubmit1" disabled="disabled" >
+        </div>
+
+        <div class="form-floating col-md-10 mb-3">
+          <input type="text" class="form-control" id="txtInput2" placeholder="نام کاربری" onkeyup="EnableDisable(this)">
+          <label for="username">نام کاربری</label>
+        </div>
+        <div class="col-md-1 ">
+          <input type="submit" class="fa-icon" value="&#xf00c" id="btnSubmit2" disabled="disabled">
+        </div>
+
+        <div class="form-floating col-md-10 mb-3">
+          <input type="email" class="form-control" id="email" placeholder="ایمیل">
+          <label for="email">ایمیل</label>
+        </div>
+        <div class="col-md-1 mt-auto mb-3">
+          <input type="submit" class="fa-icon" value="&#xf00c" id="btnSubmit3" disabled="disabled">
+        </div>
+
+        <div class="form-floating col-md-10 mb-3">
+          <input type="number" class="form-control" id="phoneNum" placeholder="شماره تلفن همراه">
+          <label for="phoneNum">شماره تلفن همراه</label>
+        </div>
+        <div class="col-md-1 mt-auto mb-3">
+          <input type="submit" class="fa-icon" value="&#xf00c" id="btnSubmit4" disabled="disabled">
+        </div>
+
+        <div class="form-floating col-md-10 mb-3">
+          <input type="text" class="form-control" id="address" placeholder="آدرس">
+          <label for="address">آدرس</label>
+        </div>
+        <div class="col-md-1 mt-auto mb-3">
+          <input type="submit" class="fa-icon" value="&#xf00c" id="btnSubmit5" disabled="disabled">
+        </div>
+
+        <div class="form-floating col-md-10 mb-3">
+          <input type="number" class="form-control" id="postNumber" placeholder="کد پستی">
+          <label for="postNumber">کدپستی</label>
+        </div>
+        <div class="col-md-1 mt-auto mb-3">
+          <input type="submit" class="fa-icon" value="&#xf00c" id="btnSubmit6" disabled="disabled">
+        </div>
+
+
+
+      </div>
+    </form>
+
   </div>
+
+  </div>
+
+  </div>
+  <script type="text/javascript">
+    function EnableDisable(txtInput) {
+      var rawTxtId= txtInput.id;
+      var txtIdSubstringer=rawTxtId.substring(8);
+      var rawBtnId="btnSubmit";
+      var btnId=rawBtnId.concat(txtIdSubstringer);
+
+     
+      var input=document.getElementById(rawTxtId);
+        //Reference the Button.
+        var btnSubmit = document.getElementById(btnId);
+ 
+        //Verify the TextBox value.
+        if (input.value.trim() != "") {
+            //Enable the SubmitButton when TextBox has value.
+            btnSubmit.disabled = false;
+        } else {
+            //Disable the SubmitButton when TextBox is empty.
+            btnSubmit.disabled = true;
+        }
+    };
+</script>
 </body>
 
 </html>
