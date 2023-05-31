@@ -71,15 +71,21 @@ input[type=search]{
 .fa-icon{
     font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.btnCheck:disabled{
-    background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
-    color: -internal-light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
-    border-color: -internal-light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3));
-}
+
 .btnCheck{
-    border: 0.5px solid gray;
+    display: none;
+    border: none;
     background-color: transparent;
-    color: aliceblue;
+    color: #3d4e53 ;
+    transition: 0.5;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    font-size: small;
+    width: 30px;
+    height: 30px;
+    
+}
+.btnCheck:enabled:hover{
+    background-color: #e3e7ec;
 }
 
 
